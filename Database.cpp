@@ -65,7 +65,7 @@ int Database::calculateAvg(const std::string& file_name,
 		in.close();
 	}
 	catch (std::ios_base::failure& fail) {
-		std::cout << fail.what() << std::endl;
+		return OperationEnum::ERROR;
 	}
 
 	try {
